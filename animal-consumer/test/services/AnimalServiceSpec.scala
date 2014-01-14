@@ -22,7 +22,7 @@ class AnimalServiceSpec extends PlaySpecification {
     val executionContext = play.api.libs.concurrent.Execution.Implicits.defaultContext
 
     val alligatorPact = MakePact()
-      .withProvider("Animal_Serice")
+      .withProvider("Animal_Service")
       .withConsumer("Zoo_App")
 
     "List All Animals" in {

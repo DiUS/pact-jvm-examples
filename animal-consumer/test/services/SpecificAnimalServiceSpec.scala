@@ -17,7 +17,7 @@ import com.dius.pact.consumer.PactVerification.PactVerified
 class SpecificAnimalServiceSpec extends Specification {
   "Animal Service" should {
     val animalPact = MakePact()
-      .withProvider("Animal_Serice")
+      .withProvider("Animal_Service")
       .withConsumer("Zoo_App")
 
     val port = 9000
