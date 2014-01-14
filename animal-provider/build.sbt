@@ -9,3 +9,7 @@ libraryDependencies ++= Seq(
 )     
 
 play.Project.playScalaSettings
+
+PactJvmPlugin.pactSettings
+
+net.virtualvoid.sbt.graph.Plugin.graphSettings

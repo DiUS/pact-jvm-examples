@@ -1,0 +1,5 @@
+{
+    "providerBaseUrl": "http://localhost:9000",
+    "stateChangeUrl": "http://localhost:9000/enterState",
+    "timeoutSeconds": 10
+}

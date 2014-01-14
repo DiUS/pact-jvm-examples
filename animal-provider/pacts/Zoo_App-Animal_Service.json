@@ -1,0 +1,27 @@
+{
+  "provider" : {
+    "name" : "Animal_Service"
+  },
+  "consumer" : {
+    "name" : "Zoo_App"
+  },
+  "interactions" : [ {
+    "provider_state" : "there are alligators",
+    "description" : "a request for animals",
+    "request" : {
+      "method" : "GET",
+      "path" : "/animals"
+    },
+    "response" : {
+      "status" : 200,
+      "body" : [ {
+        "name" : "Bob"
+      } ]
+    }
+  } ],
+  "metadata" : {
+    "pact_gem" : {
+      "version" : "1.0.9"
+    }
+  }
+}
