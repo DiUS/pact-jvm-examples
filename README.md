@@ -6,7 +6,7 @@ Example projects for https://github.com/DiUS/pact-jvm built for playframework 2.
 animal-consumer
 ===============
 
-Observe _link to come_
+Observe https://github.com/DiUS/pact-jvm-example/blob/master/animal-consumer/test/services/AnimalServiceSpec.scala
 
 This test runs during the normal "sbt test" (or "play test") phase, but will output a file into target/pacts/
 
@@ -17,8 +17,8 @@ animal-provider
 ===============
 
 Observe :
-*  The pact in _link to come_
-*  The configuration in _link to come_
+*  The pact in https://github.com/DiUS/pact-jvm-example/blob/master/animal-provider/pacts/Zoo_App-Animal_Service.json
+*  The configuration in https://github.com/DiUS/pact-jvm-example/blob/master/animal-provider/pact-config.json
 
 To verify that this provider meets the pact:
 
