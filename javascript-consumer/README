@@ -1,4 +1,10 @@
-This is your new Play application
+Javascript pact consumer example
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+There is no javascript pact library at the moment.  
+We would be really happy if one of you node.js people wanted to build one
+
+In the mean time this is a work around that will allow you to author and verify pacts between browser based javascript clients and service providers
+
+It uses scala to author the pact using the DSL then selenium to drive a browser which triggers the javascript against the MockServiceProvider, then scala to verify and generate the pact file
+
