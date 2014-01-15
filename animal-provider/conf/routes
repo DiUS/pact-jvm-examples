@@ -5,6 +5,9 @@
 # Home page
 GET     /animals                    controllers.Application.index
 
+GET     /alligators/:name           controllers.Application.find(name)
+GET     /alligators                 controllers.Application.index
+
 POST    /enterState                 controllers.Application.enterState
 
 # Map static resources from the /public folder to the /assets URL path
