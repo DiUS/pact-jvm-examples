@@ -1,11 +1,12 @@
 package pacts
 
 import play.api.test.{WithBrowser, PlaySpecification}
-import com.dius.pact.model.MakePact
-import com.dius.pact.consumer.ConsumerPact._
-import com.dius.pact.model.MakeInteraction.given
-import com.dius.pact.author.PactServerConfig
-import com.dius.pact.consumer.PactVerification.PactVerified
+import au.com.dius.pact.model.MakePact
+import au.com.dius.pact.consumer.ConsumerPact._
+import au.com.dius.pact.model.MakeInteraction.given
+import au.com.dius.pact.consumer.PactServerConfig
+import au.com.dius.pact.consumer.PactVerification.PactVerified
+import org.openqa.selenium.phantomjs.PhantomJSDriver
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration
 import java.util.concurrent.TimeUnit
@@ -16,7 +17,7 @@ class JavascriptConsumerSpec extends PlaySpecification {
       .withProvider("Animal_Service")
       .withConsumer("javascript_zoo_app")
 
-    "consume service" in new WithBrowser(FIREFOX){
+    "consume service" in new WithBrowser(webDriver = classOf[PhantomJSDriver]){
       val state = "there are alligators"
       val pact = consumerPact.withInteractions(
         given(state)
