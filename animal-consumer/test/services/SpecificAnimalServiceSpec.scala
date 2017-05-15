@@ -1,14 +1,15 @@
 package services
 
-import org.specs2.mutable.Specification
-import com.dius.pact.model.{Pact, MakeInteraction, MakePact}
-import MakeInteraction.given
-import com.dius.pact.consumer.ConsumerPact._
-import com.dius.pact.author.PactServerConfig
-import scala.concurrent.Await
+import au.com.dius.pact.consumer.ConsumerPact._
+import au.com.dius.pact.consumer.PactServerConfig
+import au.com.dius.pact.consumer.PactVerification.PactVerified
+import au.com.dius.pact.model.MakeInteraction.given
+import au.com.dius.pact.model.{MakePact, Pact}
 import model.Alligator
+import org.specs2.mutable.Specification
+
+import scala.concurrent.Await
 import scala.concurrent.duration.Duration
-import com.dius.pact.consumer.PactVerification.PactVerified
 
 /**
  * Split out the one request ,
