@@ -1,14 +1,14 @@
 package services
 
-import play.api.test.PlaySpecification
+import au.com.dius.pact.consumer.ConsumerPact._
+import au.com.dius.pact.consumer.{PactServerConfig, PactVerification}
+import au.com.dius.pact.model.MakeInteraction.given
+import au.com.dius.pact.model.{MakePact, Pact}
 import model.Alligator
-import com.dius.pact.model.{MakePact, Pact}
-import com.dius.pact.model.MakeInteraction.given
-import com.dius.pact.author.PactServerConfig
-import com.dius.pact.consumer.PactVerification
-import scala.concurrent.duration.Duration
+import play.api.test.PlaySpecification
+
 import scala.concurrent.Await
-import com.dius.pact.consumer.ConsumerPact._
+import scala.concurrent.duration.Duration
 
 /**
  * Test the collection endpoints of the animal service
